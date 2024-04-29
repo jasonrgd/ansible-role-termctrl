@@ -1,2 +1,27 @@
 ---
 # tasks file for termctrl
+
+- name: Install winget
+  include_tasks: "./ansible-role-termctrl/tasks/winget.yml"
+
+- name: Install brew
+  include_tasks: "./ansible-role-termctrl/tasks/brew.yml"
+
+- name: Install ZSH
+  include_tasks: "./ansible-role-termctrl/tasks/zsh.yml"
+
+- name: Install Oh My Posh
+  include_tasks: "./ansible-role-termctrl/tasks/oh_my_posh.yml"
+
+- name: Install neofetch
+  include_tasks: "./ansible-role-termctrl/tasks/neofetch.yml"
+
+- name: Install btop
+  include_tasks: "./ansible-role-termctrl/tasks/btop.yml"
+
+
+- name: Install neovim
+  include_tasks: "./ansible-role-termctrl/tasks/neovim.yml"
+
+- name: Install ssh Configuration
+  include_tasks: "./ansible-role-termctrl/tasks/ssh.yml"

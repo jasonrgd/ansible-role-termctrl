@@ -1,0 +1,19 @@
+---
+# tasks file for termctrl
+
+- name: Install neofetch
+  apt: name=neofetch state=latest
+  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
+
+
+- name: Backup neofetch Configuration
+  copy: 
+    src: ~/.config/neofetch/config.conf
+    dest: ~/.config/neofetch/config.conf.bk
+  become: false
+
+- name: Copy neofetch Configuration
+  copy: 
+    src: ./ansible-role-termctrl/files/neofetch.conf
+    dest: ~/.config/neofetch/config.conf
+  become: false
