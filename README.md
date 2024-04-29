@@ -37,7 +37,7 @@ Including an example of how to use your role (for instance, with variables passe
 License
 -------
 
-BSD
+Ansible Role Term Ctrl &copy; 2024 by Jason Dsouza is licensed under CC BY-NC-SA 4.0
 
 Author Information
 ------------------
